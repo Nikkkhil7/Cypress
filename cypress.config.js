@@ -23,6 +23,17 @@ viewportHeight: 720,
       // implement node event listeners here
     },
   },
+  // Reporter configuration
+  reporter: 'mochawesome',
+  reporterOptions: {
+    reportDir: 'cypress/reports',
+    overwrite: false,
+    html: true,
+    json: true,
+    charts: true,
+    reportPageTitle: 'OrangeHRM Test Report',
+    inlineAssets: true,
+  },
 });
  
  
